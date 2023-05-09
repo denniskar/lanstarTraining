@@ -48,7 +48,7 @@ public class RCar {
 
     public void printDetails() {
 
-        System.out.println("Make: " + make + " Model: " + model + " Year: " + year + " Price: " );
+        System.out.println("Make: " + make + " Model: " + model + " Year: " + year + " Price: " + price );
     }
 
     public void discount(double percentageDiscount) {
