@@ -1,3 +1,8 @@
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+
+
 public class BCar {
     //instance variables
 
@@ -47,8 +52,18 @@ public BCar(String make, String model, double price, int year){
         this.year = year;
     }
     public void printDetails(){
-        System.out.println("make " + make + "model " + model + "price " + price + "year " + year);
+        System.out.println("make " + make + "model " + model + "price " + currency(price) + "year " + year);
     }
+
+        public String currency(Double price){
+    Locale locale = new Locale("en","US");
+    NumberFormat numberFormat=DecimalFormat.getCurrencyInstance(locale);
+    return numberFormat.format(price);
+
+
+
+    }
+
     public void discount(double perDiscount){
     double amount=price*perDiscount/100.00;
     price -=amount;
