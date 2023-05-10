@@ -6,6 +6,7 @@ public class RCar {
 
     private int year;
 
+
     public RCar(String make, String model, double price, int year) {
         this.make = make;
         this.model = model;
@@ -56,3 +57,4 @@ public class RCar {
         price -= amount;
     }
 }
+
