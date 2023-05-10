@@ -1,3 +1,6 @@
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class RCar {
     private String make;
@@ -49,9 +52,13 @@ public class RCar {
 
     public void printDetails() {
 
-        System.out.println("Make: " + make + " Model: " + model + " Year: " + year + " Price: " + price );
+        System.out.println("Make: " + make + " Model: " + model + " Year: " + year + " Price: " + currency(price) );
     }
-
+    public String currency(Double price){
+        Locale locale=new Locale("en","US");
+        NumberFormat numberFormat= DecimalFormat.getCurrencyInstance(locale);
+        return numberFormat.format(price);
+    }
     public void discount(double percentageDiscount) {
         double amount = price * percentageDiscount / 100.0;
         price -= amount;
