@@ -33,18 +33,18 @@
 
 ### _Spring Boot File Structure_
 > root (Project Root Folder)
->> src (This directory contains the Java source code of your application)
+>> src
 >>> main
 >>>> java
 >>>>> controllers
 >>>>> services
 >>>>> repositories
->>> resources (This directory contains non-Java resources such as properties files, XML files, and static files )
+>>> resources
 >>>>> properties.yml
 >>> test
 >>>> java
 >>>> resources
->> pom (This is the project configuration file that contains the dependencies, build settings, and other project-related information.)
+>> pom
 
 
 ### _APIs Best Practice_
