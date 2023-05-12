@@ -36,14 +36,23 @@
 >> src
 >>> main
 >>>> java
+>>>> 
 >>>>> controllers
+>>>>> 
 >>>>> services
+>>>>> 
 >>>>> repositories
+>>>>> 
 >>> resources
+>>> 
 >>>>> properties.yml
+>>>>> 
 >>> test
+>>> 
 >>>> java
+>>>> 
 >>>> resources
+>>>> 
 >> pom
 
 
@@ -58,13 +67,21 @@
 4. _Use proper HTTP status codes:_ HTTP status codes are used to indicate the status of a request. Using the proper HTTP status codes can help the client to understand the outcome of a request and respond accordingly. 
 
     4.1. 200 OK
+    
     4.2. 204 No Content.
+   
     4.3. 400 Bad Request.
+    
     4.4. 401 Unauthorized.
+    
     4.5. 403 Forbidden.
+    
     4.6. 404 Not Found.
+    
     4.7. 405 Method Not Allowed.
+    
     4.8. 500 Internal Server Error.
+    
     4.9. 503 Service Unavailable.
 
 5. _Use versioning:_ As APIs evolve over time, it is important to maintain backward compatibility and provide versioning for APIs. Versioning allows clients to continue to use older versions of the API while also allowing for new features and improvements to be added.
